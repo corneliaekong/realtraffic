@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/ebf30d11fb.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="custom.css">
+  <title>realtraffic/discountpackage</title>
+</head>
+<body>
+  <!-- navbar component -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <button class="navbar-toggler ml-auto mb-2" type="button" data-toggle="collapse" data-target="#myNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="myNavbar">
+     <div class="container-fluid">
+       <div class="row">
+         <!-- sidebar -->
+         <div class=" col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
+           <a href="#" class="navbar=brand d-block text-center text-white py-3 mr-auto  mb-4"><h4 >Real Traffic</h4></a>
+           <div class="user border-bottom text-center pb-3">
+             <i class="fa fa-user mr-3"></i>
+             <a href="#" class="text-white">Cornelia Denis</a>
+           </div>
+
+           <ul class="navbar-nav flex-column mt-4">
+             <li class=" icon-parent"><a href="dashboard.html" class="nav-link text-white p-2 mb-2 sidebar-lin"><i class="fa fa-dashboard fa-lg text-white mr-3"></i>Dashboard</a>    
+             </li>
+             <li class=" icon-parent"><a href="tasks.html" class="nav-link text-white p-2 mb-2 sidebar-link"><i class="fa fa-shopping-cart fa-lg text-white mr-3"></i>My Orders</a>    
+             </li>
+             <li class=" icon-parent"><a href="inventory.html" class="nav-link text-white p-2 mb-2 sidebar-link"><i class="fa fa-database fa-lg text-white mr-3"></i>Inventory/Publishers</a>    
+             </li>
+             <li class=" icon-parent"><a href="recommendedsite.html" class="nav-link text-white p-2 mb-2 sidebar-link"><i class="fa fa-bar-chart-o fa-lg text-white mr-2"></i>Recommended Sites</a>    
+             </li>
+             <li class=" icon-parent"><a href="#" class="nav-link text-white p-2 mb-2 sidebar-link" data-toggle="toggle" data-target="#mydrop"><i class="fa fa-credit-card fa-lg text-white mr-3"></i>Payments</a> 
+              <div class="drop" id="mydrop">
+                <a class="dropdown-item text-light sidebar-link " href="addfund.html"><i class="fa fa-credit-card mr-2"></i> Add Fund</a>
+                <a class="dropdown-item text-light sidebar-link" href="refund.html"><i class="fa fa-envelope mr-2"></i> Refund</a>
+              </div>   
+             </li>
+            
+             <li class=" icon-parent"><a href="inventory.html" class="nav-link text-white p-2 mb-2 sidebar-link"><i class="fa fa-tasks fa-lg text-white mr-3"></i>Custom Request</a>    
+             </li>
+             <li class=" icon-parent"><a href="discount.html" class="nav-link text-white p-2 mb-2 current"><i class="fa fa-television fa-lg text-white mr-3"></i>Discount Package</a>  
+      
+             </li>
+             <li class=" icon-parent"><a href="copywriting.html" class="nav-link text-white p-2 mb-2 sidebar-link"><i class="fa fa-edit fa-lg text-white mr-3"></i>copywriting</a>    
+             </li>
+             <li class=" icon-parent"><a href="#" class="nav-link text-white p-2 mb-2 sidebar-link"><i class="fa fa-cog fa-lg text-white mr-3"></i>Settings</a>    
+             </li>
+             <li class=" icon-parent"><a href="#" class="nav-link text-white p-2 mb-2 sidebar-link"><i class="fa fa-sign-out fa-lg text-white mr-3"></i>Log out</a>    
+             </li>
+           </ul>
+         </div>
+
+         <!-- end of side bar -->
+         <!-- Main content area -->
+         <div class=" col-xl-10 col-lg-9 col-md-8 ml-auto custom fixed-top py-2 top-navbar">
+           <div class="row align-items-center">
+             <div class="col-md-8">
+               <h4 class="text-light  text-uppercase mb-0">Discount Packages</h4>
+             </div>
+             
+             <div class="col-md-4 ml-auto">
+              <ul class="navbar-nav ">
+                <li class="nav-item icon-parent mr-3">
+                  <a class="nav-link icon-bullet" href="#" >
+                    <i class="fa fa-shopping-cart fa-lg text-white"></i> 
+                  </a>
+                 </li>
+                 <li class="nav-item icon-parent mr-3">
+                  <a class="nav-link icon-bullet" href="#" >
+                    <i class="fa fa-bell-o fa-lg text-white "></i> 
+                  </a>
+                 </li>
+                <li class=" icon-parent ml-5 ">
+                 <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                   <i class="fa fa-user fa-lg text-white"></i> Denis
+                 </a>
+                 <div class="dropdown-menu ">
+                   <a class="dropdown-item " href="addfund.html" data-toggle="modal" data-target=".addFund">Add Fund</a>
+                   <a class="dropdown-item " href="balance.html">Balance</a>
+                   <a class="dropdown-item " href="#">Blog</a>
+                   <a class="dropdown-item " href="#">Contact us</a>
+
+                   <a class="dropdown-item " href="account-settings.html">Account Settings</a>
+                   <a class="dropdown-item " href="#" data-toggle="modal" data-target=".myModal">log out</a>
+                 </div>
+                </li>
+              </ul>
+             </div>
+           </div>
+           
+         </div>
+       </div>
+    </div>
+    </div>
+
+  </nav>
+  <!-- cards -->
+  <!--logout modal -->
+  <div class="modal fade myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Are you sure you want to quit</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          click the close button to exit
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal">Ok</button>
+
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  <!-- end of logout modal -->
+
+  <!-- add fund modal -->
+  <div class="modal fade addFund" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Fund your Account</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h5>select payment method</h5>
+          <form action="">
+            <select name="payment" id="" class="form-control" required>
+              <option value="1">Paypal</option>
+              <option value="2">Card</option>
+            </select>
+            
+            
+            <div class="form-group">
+              <label for="price">Amount</label>
+              <div class="input-group">
+                <input type="number" class="form-control" title min="10" max="25000" step="5" required>
+                <div class="input-group-append">
+                  <span class="input-group-text">$</span>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <a href="addfund.html" class="btn btn-success" type="submit">Add</a>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  <!-- end of add fund modal -->
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-10 col-lg-9 col-md-8 ml-auto p-5">
+          <h2 class="text-center mt-3">Discount Packages</h2>
+
+          <div class="row pt-5 mt-3 mb-5">
+            <div class="col-xl-4  col-sm-6 p-2">
+              <div class="card card-common">
+                <div class="card-body">
+                  <div class="text-center">
+                    <h3 class="text-primary">DA 20- 39</h3>
+                    <p class="font-weight-bold">299 $</p>
+                    <p class="font-weight-bold">5 GUEST POSTS</p>
+                  </div>
+                  <ul>
+                    <li class="pb-2"><i class="fa fa-check mr-2"></i>500 - 700 Words Article</li>
+                    <li class="pb-2"><i class="fa fa-check mr-2"></i>Blog Selection</li>
+                    <li class="pb-2"><i class="fa fa-check mr-2"></i>Manual Outreach Process</li>
+                    <li class="pb-2"><i class="fa fa-check mr-2"></i>No Private Blogging Networks</li>
+                    <li class="pb-2"><i class="fa fa-check mr-2"></i>2-3 Days Delivery</li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <button type="button" class="btn btn-success">Order Now</button>
+                </div>
+              </div>
+            </div>
+            <div class=" col-xl-4 col-sm-6 p-2">
+              <div class="card card-common">
+                <div class="card-body">
+                  <div class="text-center">
+                    <h3 class="text-primary">DA 40- 59</h3>
+                    <p class="font-weight-bold">499 $</p>
+                    <p class="font-weight-bold">5 GUEST POSTS</p>
+                  </div>
+                  <ul>
+                    <li class="pb-2"><i class="fa fa-check mr-2"></i>500 - 700 Words Article</li>
+                    <li class="pb-2"><i class="fa fa-check mr-2"></i>Blog Selection</li>
+                    <li class="pb-2"><i class="fa fa-check mr-2"></i>Manual Outreach Process</li>
+                    <li class="pb-2"><i class="fa fa-check mr-2"></i>No Private Blogging Networks</li>
+                    <li class="pb-2"><i class="fa fa-check mr-2"></i>2-3 Days Delivery</li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <button type="button" class="btn btn-success">Order Now</button>
+                </div> 
+                
+              </div>
+
+            </div>
+            <div class="col-xl-4 col-sm-6 p-2">
+              <div class="card card-common">
+                <div class="card-body">
+                  <div class="text-center">
+                    <h3 class="text-primary">DA 60+</h3>
+                    <p class="font-weight-bold">299 $</p>
+                    <p class="font-weight-bold">5 GUEST POSTS</p>
+                  </div>
+                  <ul>
+                    <li class="pb-2"><i class="fa fa-check mr-2"></i>500 - 700 Words Article</li>
+                    <li class="pb-2"><i class="fa fa-check mr-2"></i>Blog Selection</li>
+                    <li class="pb-2"><i class="fa fa-check mr-2"></i>Manual Outreach Process</li>
+                    <li class="pb-2"><i class="fa fa-check mr-2"></i>No Private Blogging Networks</li>
+                    <li class="pb-2"><i class="fa fa-check mr-2"></i>2-3 Days Delivery</li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <button type="button" class="btn btn-success">Order Now</button>
+                </div>
+              </div>
+            </div>
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of cards -->
+
+  <!-- post content -->
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-10 col-lg-9 col-md-8 ml-auto p-5 mt-3">
+      
+       </div>     
+    </div>
+  </section>
+  <!-- end of table -->
+
+   
+</body>
+</html>

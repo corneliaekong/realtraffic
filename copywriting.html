@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/ebf30d11fb.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="custom.css">
+  <title>dashboard/copywriting</title>
+</head>
+<body>
+  <!-- navbar component -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <button class="navbar-toggler ml-auto mb-2" type="button" data-toggle="collapse" data-target="#myNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="myNavbar">
+     <div class="container-fluid">
+       <div class="row">
+         <!-- sidebar -->
+         <div class=" col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
+           <a href="#" class="navbar=brand d-block text-center text-white py-3 mr-auto  mb-4"><h4>Real Traffic</h4></a>
+           <div class="user border-bottom text-center pb-3">
+             <i class="fa fa-user mr-3"></i>
+             <a href="#" class="text-white">Cornelia Denis</a>
+           </div>
+           <ul class="navbar-nav flex-column mt-4">
+            <li class=" icon-parent"><a href="index.html" class="nav-link text-white p-2 mb-2 sidebar-link"><i class="fa fa-dashboard fa-lg text-white mr-3"></i>Dashboard</a>    
+            </li>
+            <li class=" icon-parent"><a href="tasks.html" class="nav-link text-white p-2 mb-2 sidebar-link"><i class="fa fa-shopping-cart fa-lg text-white mr-3"></i>My Orders</a>    
+            </li>
+            <li class=" icon-parent"><a href="inventory.html" class="nav-link text-white p-2 mb-2 sidebar-link"><i class="fa fa-database fa-lg text-white mr-3"></i>Inventory/Publishers</a>    
+            </li>
+            <li class=" icon-parent"><a href="recommendedsite.html" class="nav-link text-white p-2 mb-2 sidebar-link"><i class="fa fa-bar-chart-o fa-lg text-white mr-3"></i>Recommended Sites</a>    
+            </li>
+            <li class=" icon-parent"><a href="#" class="nav-link text-white p-2 mb-2 sidebar-link" data-toggle="toggle" data-target="#mydrop"><i class="fa fa-credit-card fa-lg text-white mr-3"></i>Payments</a> 
+              <div class="drop" id="mydrop">
+                <a class="dropdown-item text-light sidebar-link " href="addfund.html"><i class="fa fa-credit-card mr-2"></i> Add Fund</a>
+                <a class="dropdown-item text-light sidebar-link" href="refund.html"><i class="fa fa-envelope mr-2"></i> Refund</a>
+              </div>   
+            </li>
+           
+            <li class=" icon-parent"><a href="custom_request.html" class="nav-link text-white p-2 mb-2 sidebar-link"><i class="fa fa-tasks fa-lg text-white mr-3"></i>Custom Request</a>  
+      
+            </li>
+            <li class=" icon-parent"><a href="discount.html" class="nav-link text-white p-2 mb-2 sidebar-link"><i class="fa fa-television fa-lg text-white mr-3"></i>Discount Package</a>  
+      
+            </li>
+            <li class=" icon-parent"><a href="copywriting.html" class="nav-link text-white p-2 mb-2 current"><i class="fa fa-edit fa-lg text-white mr-3"></i>Copywriting</a>    
+            </li>
+            <li class=" icon-parent"><a href="#" class="nav-link text-white p-2 mb-2 sidebar-link"><i class="fa fa-cog fa-lg text-white mr-3"></i>Settings</a>    
+            </li>
+            <li class=" icon-parent"><a href="#" class="nav-link text-white p-2 mb-2 sidebar-link"><i class="fa fa-sign-out fa-lg text-white mr-3"></i>Log out</a>    
+            </li>
+          </ul>
+        </div>
+             
+
+           </ul>
+         </div>
+         <!-- end of side bar -->
+         <!-- main content area -->
+         <div class=" col-xl-10 col-lg-9 col-md-8 ml-auto custom fixed-top py-2 top-navbar">
+           <div class="row align-items-center">
+             <div class="col-md-8">
+               <h4 class="text-light  text-uppercase mb-0 text-center">Copy Writing</h4>
+             </div>
+            
+             <div class="col-md-4">
+              <ul class="navbar-nav ">
+                <li class="nav-item icon-parent">
+                  <a class="nav-link icon-bullet" href="#" >
+                    <i class="fa fa-shopping-cart fa-lg text-white"></i> 
+                  </a>
+                 </li>
+                 <li class="nav-item icon-parent">
+                  <a class="nav-link icon-bullet" href="#" >
+                    <i class="fa fa-bell-o fa-lg text-white "></i> 
+                  </a>
+                 </li>
+                <li class=" icon-parent ml-5">
+                 <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                   <i class="fa fa-user fa-lg text-white"></i> Denis
+                 </a>
+                 <div class="dropdown-menu">
+                   <a class="dropdown-item " href="#"data-target=".addFund" data-toggle="modal">Add Fund</a>
+                   <a class="dropdown-item" href="balance.html">Balance</a>
+                   <a class="dropdown-item" href="account-settings.html">Settings</a>
+                   <a class="dropdown-item" href="#" data-toggle="modal" data-target=".myModal">log out</a>
+                 </div>
+                </li>
+              </ul>
+             </div>
+           </div>
+           <!-- end of main content area -->
+         </div>
+       </div>
+    </div>
+    </div>
+
+  </nav>
+  <!--logout modal -->
+  <div class="modal fade myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Are you sure you want to quit</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          click the close button to exit
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal">Ok</button>
+
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  <!-- end of logout modal -->
+
+   <!-- add fund modal -->
+   <div class="modal fade addFund" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Fund your Account</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h5>select payment method</h5>
+          <form action="">
+            <select name="payment" id="" class="form-control">
+              <option value="1">Paypal</option>
+              <option value="2">Card</option>
+            </select>
+            
+            
+            <div class="form-group">
+              <label for="price">Amount</label>
+              <div class="input-group">
+                <input type="number" class="form-control" title min="10" max="25000" step="5" required>
+                <div class="input-group-append">
+                  <span class="input-group-text">$</span>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <a href="addfund.html" class="btn btn-success" type="submit">Add</a>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  <!-- end of add fund modal -->
+ 
+<!-- form content -->
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+          <div class="row">
+            <div class="col-12 p-5 mt-5">
+              <h3 class="text-uppercase text-center">Copy Writing</h3>
+              <form action="" class="custom-form">
+                <div class="form-group">
+                  <label for="titile">Title</label>
+                  <input type="text" class="form-control" name="title" id="title">
+                </div>
+                <div class="form-group">
+                  <label for="description" name="description" aria-required="true">Description</label>
+                  <textarea name="" id="" cols="5" rows="5" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="">Format:</label>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" value=""name="opt1">News
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" value="" name="opt1">Article
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" value="" name="opt1" >Press release
+                    </label>
+                  </div>
+
+                </div>
+                <div class="form-group col-3">
+                  <label for="">Language</label>
+                  <select class="form-control">
+                    <option value="AB">Abkhazian</option>
+                    <option value="AA">Afar</option>
+                    <option value="AF">Afrikanns</option>
+                    <option value="SQ">Albanian</option>
+                    <option value="AM">Amharic</option>
+                    <option value="AR">Arabic</option>
+                    <option value="HY">Armenian</option>
+                    <option value="AS">Assamese</option>
+                    <option value="AY">Aymara</option>
+                    <option value="AZ">Azerbaijani</option>
+                    <option value="BA">Bashkir</option>
+                    <option value="EU">Basque</option>
+                    <option value="BN">Bengali, Bangla</option>
+                    <option value="DZ">Bhutani</option>
+                    <option value="BH">Bihari</option>
+                    <option value="BI">Bislama</option>
+                    <option value="BR">Breton</option>
+                    <option value="BG">Bulgarian</option>
+                    <option value="MY">Burmese</option>
+                    <option value="BE">Byelorussian</option>
+                    <option value="KM">Cambodian</option>
+                    <option value="CA">Catalan</option>
+                    <option value="ZH">Chinese (Mandarin)</option>
+                    <option value="CO">Corsican</option>
+                    <option value="HR">Croation</option>
+                    <option value="CS">Czech</option>
+                    <option value="DA">Danish</option>
+                    <option value="NL">Dutch</option>
+                    <option value="EN">English, American</option>
+                    <option value="EO">Esperanto</option>
+                    <option value="ET">Estonian</option>
+                    <option value="FO">Faeroese</option>
+                    <option value="FJ">Fiji</option>
+                    <option value="FI">Finnish</option>
+                    <option value="FR">French</option>
+                    <option value="FY">Frisian</option>
+                    <option value="GD">Gaelic (Scots Gaelic)</option>
+                    <option value="GL">Galician</option>
+                    <option value="KA">Georgian</option>
+                    <option value="DE">German</option>
+                    <option value="EL">Greek</option>
+                    <option value="KL">Greenlandic</option>
+                    <option value="GN">Guarani</option>
+                    <option value="GU">Gujarati</option>
+                    <option value="HA">Hausa</option>
+                    <option value="IW">Hebrew</option>
+                    <option value="HI">Hindi</option>
+                    <option value="HU">Hungarian</option>
+                    <option value="IS">Icelandic</option>
+                    <option value="IN">Indonesian</option>
+                    <option value="IA">Interlingua</option>
+                    <option value="IE">Interlingue</option>
+                    <option value="IK">Inupiak</option> 
+                    <option value="GA">Irish</option>
+                    <option value="IT">Italian</option>
+                    <option value="JA">Japanese</option>
+                    <option value="JW">Javanese</option>
+                    <option value="KN">Kannada</option>
+                    <option value="KS">Kashmiri</option>
+                    <option value="KK">Kazakh</option>
+                    <option value="RW">Kinyarwanda</option>
+                    <option value="KY">Kirghiz</option>
+                    <option value="RN">Kirundi</option>
+                    <option value="KO">Korean</option>
+                    <option value="KU">Kurdish</option>
+                    <option value="LO">Laothian</option>
+                    <option value="LA">Latin</option>
+                    <option value="LV">Latvian, Lettish</option>
+                    <option value="LN">Lingala</option>
+                    <option value="LT">Lithuanian</option>
+                    <option value="MK">Macedonian</option>
+                    <option value="MG">Malagasy</option>
+                    <option value="MS">Malay</option>
+                    <option value="ML">Malayalam</option>
+                    <option value="MT">Maltese</option>
+                    <option value="MI">Maori</option>
+                    <option value="MR">Marathi</option>
+                    <option value="MO">Moldavian</option>
+                    <option value="MN">Mongolian</option>
+                    <option value="NA">Nauru</option>
+                    <option value="NE">Nepali</option>
+                    <option value="NO">Norwegian</option>
+                    <option value="OC">Occitan</option>
+                    <option value="OR">Oriya</option>
+                    <option value="OM">Oromo, Afan</option>
+                    <option value="PS">Pashto, Pushto</option>
+                    <option value="FA">Persian</option>
+                    <option value="PL">Polish</option>
+                    <option value="PT">Portuguese</option>
+                    <option value="PA">Punjabi</option>
+                    <option value="QU">Quechua</option>
+                    <option value="RM">Rhaeto-Romance</option>
+                    <option value="RO">Romanian</option>
+                    <option value="RU">Russian</option>
+                    <option value="SM">Samoan</option>
+                    <option value="SG">Sangro</option>
+                    <option value="SA">Sanskrit</option>
+                    <option value="SR">Serbian</option>
+                    <option value="SH">Serbo-Croatian</option>
+                    <option value="ST">Sesotho</option>
+                    <option value="TN">Setswana</option>
+                    <option value="SN">Shona</option>
+                    <option value="SD">Sindhi</option>
+                    <option value="SI">Singhalese</option>
+                    <option value="SS">Siswati</option>
+                    <option value="SK">Slovak</option>
+                    <option value="SL">Slovenian</option>
+                    <option value="SO">Somali</option>
+                    <option value="ES">Spanish</option>
+                    <option value="SU">Sudanese</option>
+                    <option value="SW">Swahili</option>
+                    <option value="SV">Swedish</option>
+                    <option value="TL">Tagalog</option>
+                    <option value="TG">Tajik</option>
+                    <option value="TA">Tamil</option>
+                    <option value="TT">Tatar</option>
+                    <option value="TE">Telugu</option>
+                    <option value="TH">Thai</option>
+                    <option value="BO">Tibetan</option>
+                    <option value="TI">Tigrinya</option>
+                    <option value="TO">Tonga</option>
+                    <option value="TS">Tsonga</option>
+                    <option value="TR">Turkish</option>
+                    <option value="TK">Turkmen</option>
+                    <option value="TW">Twi</option>
+                    <option value="UK">Ukranian</option>
+                    <option value="UR">Urdu</option>
+                    <option value="UZ">Uzbek</option>
+                    <option value="VI">Vietnamese</option>
+                    <option value="VO">Volapuk</option>
+                    <option value="CY">Welsh</option>
+                    <option value="WO">Wolof</option>
+                    <option value="XH">Xhosa</option>
+                    <option value="JI">Yiddish</option>
+                    <option value="YO">Yoruba</option>
+                    <option value="ZU">Zulu</option>
+                  </select>
+                </div>
+
+                <div class="form-group col-3">
+                  <label for="">Desired Article Size</label>
+                  <input type="number" class="form-control" title min="300" max="25000" step="50">
+                </div>
+                <div class="form-group">
+                  <label for="">Links (Maximum:5)</label>
+                  <table class="table table-bordered table-sm table-light p-1">
+                    <thead>
+                      <tr>
+                        <th>Anchor</th>
+                        <th>Promoted Url</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">1</span>
+                            </div>
+                            <input type="text" class="form-control">
+                            
+                          </div>
+                        </td>
+                        <td>
+                          <div class="input-group">
+                            <input type="text" class="form-control">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">2</span>
+                            </div>
+                            <input type="text" class="form-control">
+                            
+                          </div>
+                        </td>
+                        <td>
+                          <div class="input-group">
+                            <input type="text" class="form-control">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">3</span>
+                            </div>
+                            <input type="text" class="form-control">
+                            
+                          </div>
+                        </td>
+                        <td>
+                          <div class="input-group">
+                            <input type="text" class="form-control">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">4</span>
+                            </div>
+                            <input type="text" class="form-control">
+                            
+                          </div>
+                        </td>
+                        <td>
+                          <div class="input-group">
+                            <input type="text" class="form-control">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">5</span>
+                            </div>
+                            <input type="text" class="form-control">
+                            
+                          </div>
+                        </td>
+                        <td>
+                          <div class="input-group">
+                            <input type="text" class="form-control">
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <button class="btn btn-outline-light d-block w-50 m-auto  transparent" type="submit">Order</button>
+              </form>
+            </div>
+          </div>
+        </div>>
+      </div>
+    </div>
+  </section>
+  <!-- end of form content -->
+
+  
+</body>
+</html>

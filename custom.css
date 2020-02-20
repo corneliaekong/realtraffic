@@ -4,11 +4,16 @@ body{
   font-family: 'Roboto Condensed', sans-serif;
   background: #fcfffc;
 }
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Muli', sans-serif;
+}
 /* navbar */
 .sidebar{
   height:100vh;
   background: rgba(9, 9, 85, 0.644);
-  background:linear-gradient(to bottom,#4b00e0f8, #009FFF);
+  background:linear-gradient(to bottom,#030108c9, rgba(37, 38, 39, 0.315));
+  background:linear-gradient(to right,#4b00e0f8, #009FFF);
+
 
   color:#fff;
   box-shadow: 4px 6px 7px gray;
@@ -18,9 +23,11 @@ body{
 }
 
 .custom{
-  /* background:linear-gradient(to right,#4b00e0f8, #009FFF); */
-  background:linear-gradient(to bottom,#4b00e0f8, #009FFF);
-
+  background:linear-gradient(to right,#4b00e0f8, #009FFF);
+  /* background: #353030; */
+  border-bottom: 1px groove rgb(122, 119, 119);
+  box-shadow: 1px 3px 5px #999;
+  color: #111;
 
 }
 
@@ -93,6 +100,8 @@ ul{
 .card-common{
   box-shadow:1px 2px 5px #999;
   transition: all .4s;
+  /* width:300px; */
+  /* margin:2rem; */
 }
 .card-common:hover{
   transform: translateY(-1px);
@@ -106,6 +115,7 @@ ul{
 }
 .filter{
   background:linear-gradient(to right,#4b00e0f8, #009FFF);
+  background: #ccc;
   padding:2rem;
   border-radius: 10px;
   opacity: 1;
